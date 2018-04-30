@@ -1,0 +1,51 @@
+/*Gabriel Eslinger ~ styles.css ~ 4/16/2018*/
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: none;
+}
+footer {
+  text-align: center;
+  font-size: 0.8em;
+}
+body, html{
+  height: 100%;
+  background-color: #edf0f5;
+  font-family: 'Roboto', sans-serif;
+}
+nav {
+  position: sticky;
+}
+.tabContent {
+  display: none;
+}
+.navbar {
+    width: 100%;
+    background-color: #3b5998; /* blue background */
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left; /* Make the links appear below each other instead of side-by-side */
+    display: block;
+    text-align: center; /* Center-align text */
+    padding: 14px 16px; /* Add some padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font-size */
+}
+
+.navbar a:hover {
+    background-color: lightblue; /* Add a hover color */
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.clearfix:after { content: ""; display: table;clear: both; }
+.open {
+  display: block;
+}

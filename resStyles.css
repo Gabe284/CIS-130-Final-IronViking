@@ -1,0 +1,36 @@
+/*Gabriel Eslinger ~ resStyles.css ~ 4/16/2018*/
+@media screen and (max-width: 375px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 376px) {
+  .navbar .icon {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  img {
+    display: block;
+    width: 300px;
+  }
+  p {
+    width: 45%;
+  }
+  .open {
+    display: flex;
+  }
+}

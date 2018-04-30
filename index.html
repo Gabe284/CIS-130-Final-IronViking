@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Iron Viking Apparel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" media="screen" title="no title">
+    <link rel="stylesheet" href="resStyles.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <body>
+    <div class="mainContainer">
+      <header>
+        <nav class="navbar" id="navbar">
+          <a href="javascript:void(0)" onclick="openTab('home', this, '#4CAF50')" class="tablink"><i class="fa fa-home"></i></a>
+          <a href="javascript:void(0)" onclick="openTab('store', this, '#4CAF50')" class="tablink"><i class="fas fa-graduation-cap"></i></a>
+          <a href="javascript:void(0)" onclick="openTab('macros', this, '#4CAF50')" class="tablink"><i class="fas fa-trophy" id="defaultOpen"></i></a>
+          <a href="javascript:void(0)" onclick="openTab('about', this, '#4CAF50')" class="tablink"><i class="fas fa-trophy" id="defaultOpen"></i></a>
+          <a href="javascript:void(0)" class="icon" onclick="openMenu()"><i class="fas fa-bars"></i></a>
+          <script type="text/javascript">
+          function openMenu() {
+            var x = document.getElementById("navbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+          }
+          </script>
+        </nav>
+      </header>
+      <div class="tabContainer">
+        <div class="tabContent" id="home">
+
+        </div>
+        <div class="tabContent" id="store">
+
+        </div>
+        <div class="tabContent" id="macros">
+
+        </div>
+        <div class="tabContent" id="about">
+
+        </div>
+      </div>
+      <script type="text/javascript">
+      function openTab(tabName, elmnt, color) {
+        // Hide all elements with class="tabcontent" by default */
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabContent");
+        for (i = 0; i < tabcontent.length; i++) {
+            // tabcontent[i].style.display = "none";
+            tabcontent[i].classList.remove("open");
+        }
+          // Remove the background color of all tablinks/buttons
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].style.backgroundColor = "#3b5998";
+        }
+          document.getElementById(tabName).classList.add("open");
+        // Add the specific color to the button used to open the tab content
+        elmnt.style.backgroundColor = color;
+      }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+      <footer>
+        Gabriel Eslinger &copy;2018
+      </footer>
+    </div>
+  </body>
+</html>
